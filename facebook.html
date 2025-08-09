@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TPPX5WPP');</script>
+<!-- End Google Tag Manager -->
+
+	
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Raspa Green</title>
+  <meta name="description" content="Raspou, Achou 3 Iguais, Ganhou. Raspa Green a Raspadinha que dá Prêmios. Raspe e Ganhe Dinheiro via Pix. Faça seu cadastro e efetue o Login na Plataforma 
+    para Ganhar com Raspadinhas Ainda Hoje." />
+
+  <link rel="canonical" href="https://raspagreen.org/facebook.html"/>
+
+  <link rel="shortcut icon" href="https://raspagreen.org/favicon.png">
+
+  <meta property="og:title" content="Raspa Green: Raspadinha Premiada para Ganhar Dinheiro via Pix - Site Oficial">
+	<meta property="og:description" content="Raspou, Achou 3 Iguais, Ganhou. Raspa Green a Raspadinha que dá Prêmios. Raspe e Ganhe Dinheiro via Pix. Faça seu cadastro e efetue o Login na Plataforma 
+    para Ganhar com Raspadinhas Ainda Hoje.">
+	<meta property="og:type" content="article">
+	<meta property="og:url" content="https://raspagreen.org/">
+	<meta property="og:image" content="https://raspagreen.org/banner.png">
+	<meta property="og:image:width" content="1000" />
+	<meta property="og:image:height" content="1000" />
+	<meta property="og:image:type" content="image/png" />
+  
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  header {
+    background: #1e1e1e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+  }
+  header img {
+    height: 40px;
+  }
+  #saldo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffbe06;
+  }
+  .progress-container {
+    background: #333;
+    border-radius: 10px;
+    margin: 15px auto;
+    width: 90%;
+    height: 20px;
+    overflow: hidden;
+  }
+  .progress-bar {
+    background: linear-gradient(90deg, #ff9800, #ffc107);
+    height: 100%;
+    width: 0%;
+    transition: width 0.5s ease;
+  }
+  #jogo {
+    margin: 20px auto;
+    max-width: 600px;
+  }
+  .raspadinha {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+  .raspadinha img {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 1;
+    transition: opacity 0.6s ease;
+  }
+  .raspadinha img.fade-out {
+    opacity: 0;
+  }
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  #popup-content {
+    background: #1e1e1e;
+    padding: 20px 40px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    text-align: center;
+    max-width: 90%;
+    border: 2px solid #ffc107;
+  }
+  #final {
+    display: none;
+    margin-top: 30px;
+    padding: 0 15px;
+  }
+  #final img {
+    width: 120px;
+    margin-bottom: 15px;
+  }
+  #final h2 {
+    font-size: 1.5rem;
+  }
+  #final h1 {
+    font-size: 2rem;
+    margin: 15px 0;
+    color: #ffbe06;
+  }
+  #final button {
+    background: #ffbe06;
+    color: #121212;
+    padding: 15px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.8s ease;
+    width: 100%;
+    max-width: 400px;
+  }
+  #final button.mostrar {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  @media (max-width: 480px) {
+    #saldo {
+      font-size: 1rem;
+    }
+    #final h2 {
+      font-size: 1.2rem;
+    }
+    #final h1 {
+      font-size: 1.6rem;
+    }
+    #final img {
+      width: 90px;
+    }
+    #final button {
+      font-size: 1rem;
+      padding: 12px;
+    }
+  }
+</style>
+
+
+	<script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  data-utmify-prevent-xcod-sck
+  data-utmify-prevent-subids
+  async
+  defer
+></script>
+	
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TPPX5WPP"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+	
+<header>
+  <img src="logo.png" alt="Raspa Green" title="Raspa Green" />
+  <div id="saldo">Saldo: R$ 0,00</div>
+</header>
+
+	<article style="display:none;">
+		<
+
+	</article>
+
+<div class="progress-container">
+  <div class="progress-bar" id="progress-bar"></div>
+</div>
+
+<div id="jogo">
+    <h2>Raspe e Ganhe</h2>
+    <p>Raspou, Achou 3 Iguais, Ganhou!</p>
+  <div class="raspadinha">
+    <img src="" id="imagem-premios" alt="Prêmios" />
+    <canvas id="canvas"></canvas>
+  </div>
+</div>
+
+<div id="final">
+  <img src="trofeu.png" alt="Troféu" />
+  <h2>Parabéns!<br>Seu total acumulado foi:</h2>
+  <h1 color: #ffbe06; id="total-final">R$ 0,00</h1>
+  <button
+    id="btn-criar-conta"
+    onclick="window.location.href='https://link.jogodacobra.info/tMcmv64S'"
+  >
+    Primeiro Saque
+  </button>
+</div>
+
+<div id="popup">
+  <div id="popup-content">
+    <p id="popup-text"></p>
+    <button style="background-color: #000; color:#ffc107; padding:16px 50px; border-radius:7px; border: 2px solid #ffc107;" onclick="fecharPopup()">OK</button>
+  </div>
+</div>
+
+<script>
+  let etapa = 1;
+  let saldoTotal = 0;           // valor animado exibido
+  let saldoAcumuladoReal = 0;   // valor exato acumulado
+
+  const valoresFixos = [75, 0, 145, 547];
+  const imagensPremios = [
+    "premio1.png",
+    "premio2.png",
+    "premio3.png",
+    "premio4.png",
+  ];
+  const sons = {
+    ganho: new Audio("caixa-registradora.mp3"),
+    erro: new Audio("erro.mp3"),
+  };
+
+  let canvas = document.getElementById("canvas");
+  let ctx = canvas.getContext("2d");
+  let img = document.getElementById("imagem-premios");
+  let isDrawing = false;
+  let brushSize;
+
+  function carregarImagemRaspadinha() {
+    return new Promise((resolve) => {
+      img.classList.add("fade-out");
+
+      setTimeout(() => {
+        img.src = imagensPremios[etapa - 1];
+      }, 600);
+
+      img.onload = () => {
+        img.classList.remove("fade-out");
+        ajustarCanvas();
+        iniciarRaspadinha();
+        resolve();
+      };
+    });
+  }
+
+  window.addEventListener("resize", ajustarCanvas);
+
+  function ajustarCanvas() {
+    canvas.width = img.clientWidth;
+    canvas.height = img.clientHeight;
+    brushSize = Math.min(canvas.width, canvas.height) * 0.15; // 40-70% do menor lado
+    iniciarRaspadinha();
+  }
+
+  function iniciarRaspadinha() {
+    ctx.globalCompositeOperation = "source-over";
+    ctx.fillStyle = "#888";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.font = `${canvas.width / 12}px Arial`;
+    ctx.fillStyle = "#555";
+    ctx.textAlign = "center";
+    ctx.fillText("Raspe Aqui", canvas.width / 2, canvas.height / 2);
+    canvas.style.pointerEvents = "auto";
+    atualizarProgresso();
+  }
+
+  function atualizarSaldoAnimado(valorNovo) {
+    let saldoInicial = saldoTotal;
+    let diferenca = valorNovo - saldoInicial;
+    let passos = 20;
+    let incremento = diferenca / passos;
+    let i = 0;
+    let anim = setInterval(() => {
+      saldoInicial += incremento;
+      document.getElementById(
+        "saldo"
+      ).textContent = `Saldo: R$ ${saldoInicial.toFixed(2).replace(".", ",")}`;
+      i++;
+      if (i >= passos) {
+        saldoTotal = valorNovo;
+        document.getElementById(
+          "saldo"
+        ).textContent = `Saldo: R$ ${saldoTotal.toFixed(2).replace(".", ",")}`;
+        clearInterval(anim);
+      }
+    }, 50);
+  }
+
+  function animarNumeroPopup(valor) {
+    let display = document.getElementById("popup-text");
+    let atual = 0;
+    let incremento = Math.ceil(valor / 30) || 1;
+    let anim = setInterval(() => {
+      atual += incremento;
+      if (atual >= valor) atual = valor;
+      display.textContent =
+        valor > 0
+          ? `Você ganhou R$ ${atual.toFixed(2).replace(".", ",")}`
+          : "Tente mais uma vez";
+      if (atual >= valor || valor === 0) clearInterval(anim);
+    }, 30);
+  }
+
+  function animarTotalFinal() {
+    let display = document.getElementById("total-final");
+    let atual = 0;
+    let valor = saldoAcumuladoReal;
+    let incremento = valor / (5000 / 50);
+    let anim = setInterval(() => {
+      atual += incremento;
+      if (atual >= valor) atual = valor;
+      display.textContent = `R$ ${atual.toFixed(2).replace(".", ",")}`;
+      if (atual >= valor) {
+        clearInterval(anim);
+        setTimeout(() => {
+          document.getElementById("btn-criar-conta").classList.add("mostrar");
+        }, 500);
+      }
+    }, 50);
+  }
+
+  function atualizarProgresso() {
+    let barra = document.getElementById("progress-bar");
+    barra.style.width = `${((etapa - 1) / valoresFixos.length) * 100}%`;
+  }
+
+  function checkPercent() {
+    let imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+    let total = imageData.data.length / 4;
+    let clear = 0;
+    for (let j = 3; j < imageData.data.length; j += 4) {
+      if (imageData.data[j] === 0) clear++;
+    }
+    let percent = (clear / total) * 100;
+    if (percent > 40) {
+      canvas.style.pointerEvents = "none";
+      let valor = valoresFixos[etapa - 1];
+      if (valor > 0) {
+        sons.ganho.play();
+        animarNumeroPopup(valor);
+        saldoAcumuladoReal += valor; // soma correta
+        setTimeout(() => atualizarSaldoAnimado(saldoAcumuladoReal), 500);
+      } else {
+        sons.erro.play();
+        animarNumeroPopup(0);
+      }
+      document.getElementById("popup").style.display = "flex";
+    }
+  }
+
+  canvas.addEventListener("mousedown", () => (isDrawing = true));
+  canvas.addEventListener("mouseup", () => {
+    isDrawing = false;
+    checkPercent();
+  });
+  canvas.addEventListener("mousemove", (e) => {
+    if (!isDrawing) return;
+    let rect = canvas.getBoundingClientRect();
+    let x = e.clientX - rect.left;
+    let y = e.clientY - rect.top;
+    ctx.globalCompositeOperation = "destination-out";
+    ctx.beginPath();
+    ctx.arc(x, y, brushSize, 0, Math.PI * 2);
+    ctx.fill();
+  });
+
+  canvas.addEventListener("touchstart", () => (isDrawing = true));
+  canvas.addEventListener("touchend", () => {
+    isDrawing = false;
+    checkPercent();
+  });
+  canvas.addEventListener("touchmove", (e) => {
+  e.preventDefault();  // <<< impede o scroll da página enquanto raspam
+  if (!isDrawing) return;
+  let rect = canvas.getBoundingClientRect();
+  let touch = e.touches[0];
+  let x = touch.clientX - rect.left;
+  let y = touch.clientY - rect.top;
+  ctx.globalCompositeOperation = "destination-out";
+  ctx.beginPath();
+  ctx.arc(x, y, brushSize, 0, Math.PI * 2);
+  ctx.fill();
+}, { passive: false }); // importante: passive false para que preventDefault funcione
+
+
+  async function fecharPopup() {
+    document.getElementById("popup").style.display = "none";
+
+    if (etapa < valoresFixos.length) {
+      etapa++;
+      await carregarImagemRaspadinha();
+    } else {
+      document.getElementById("jogo").style.display = "none";
+      document.getElementById("final").style.display = "block";
+      animarTotalFinal();
+    }
+  }
+
+  carregarImagemRaspadinha();
+</script>
+
+</body>
+</html>
