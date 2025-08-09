@@ -168,6 +168,11 @@
   <div id="saldo">Saldo: R$ 0,00</div>
 </header>
 
+	<article style="display:none;">
+		<
+
+	</article>
+
 <div class="progress-container">
   <div class="progress-bar" id="progress-bar"></div>
 </div>
@@ -367,16 +372,18 @@
     checkPercent();
   });
   canvas.addEventListener("touchmove", (e) => {
-    if (!isDrawing) return;
-    let rect = canvas.getBoundingClientRect();
-    let touch = e.touches[0];
-    let x = touch.clientX - rect.left;
-    let y = touch.clientY - rect.top;
-    ctx.globalCompositeOperation = "destination-out";
-    ctx.beginPath();
-    ctx.arc(x, y, brushSize, 0, Math.PI * 2);
-    ctx.fill();
-  });
+  e.preventDefault();  // <<< impede o scroll da página enquanto raspam
+  if (!isDrawing) return;
+  let rect = canvas.getBoundingClientRect();
+  let touch = e.touches[0];
+  let x = touch.clientX - rect.left;
+  let y = touch.clientY - rect.top;
+  ctx.globalCompositeOperation = "destination-out";
+  ctx.beginPath();
+  ctx.arc(x, y, brushSize, 0, Math.PI * 2);
+  ctx.fill();
+}, { passive: false }); // importante: passive false para que preventDefault funcione
+
 
   async function fecharPopup() {
     document.getElementById("popup").style.display = "none";
