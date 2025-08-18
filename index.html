@@ -2,438 +2,214 @@
 <html lang="pt-BR">
 <head>
 
-	<!-- Google Tag Manager -->
+<!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-TPPX5WPP');</script>
+})(window,document,'script','dataLayer','GTM-KNRFGHX4');</script>
 <!-- End Google Tag Manager -->
-
-	
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Raspa Green | Raspadinha Premiada | Ganhar Dinheiro via Pix | Site Oficial</title>
-  <meta name="description" content="Raspou, Achou 3 Iguais, Ganhou. Raspa Green a Raspadinha que dá Prêmios. Raspe e Ganhe Dinheiro via Pix. Faça seu cadastro e efetue o Login na Plataforma 
-    para Ganhar com Raspadinhas Ainda Hoje." />
-
-  <link rel="canonical" href="https://raspagreen.org/"/>
-
-  <link rel="shortcut icon" href="https://raspagreen.org/favicon.png">
-
-  <meta property="og:title" content="Raspa Green: Raspadinha Premiada para Ganhar Dinheiro via Pix - Site Oficial">
-	<meta property="og:description" content="Raspou, Achou 3 Iguais, Ganhou. Raspa Green a Raspadinha que dá Prêmios. Raspe e Ganhe Dinheiro via Pix. Faça seu cadastro e efetue o Login na Plataforma 
-    para Ganhar com Raspadinhas Ainda Hoje.">
-	<meta property="og:type" content="article">
-	<meta property="og:url" content="https://raspagreen.org/">
-	<meta property="og:image" content="https://raspagreen.org/banner.png">
-	<meta property="og:image:width" content="1000" />
-	<meta property="og:image:height" content="1000" />
-	<meta property="og:image:type" content="image/png" />
   
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    background: #121212;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
-  header {
-    background: #1e1e1e;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.4);
-  }
-  header img {
-    height: 40px;
-  }
-  #saldo {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #ffbe06;
-  }
-  .progress-container {
-    background: #333;
-    border-radius: 10px;
-    margin: 15px auto;
-    width: 90%;
-    height: 20px;
-    overflow: hidden;
-  }
-  .progress-bar {
-    background: linear-gradient(90deg, #ff9800, #ffc107);
-    height: 100%;
-    width: 0%;
-    transition: width 0.5s ease;
-  }
-  #jogo {
-    margin: 20px auto;
-    max-width: 600px;
-  }
-  .raspadinha {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-  }
-  .raspadinha img {
-    width: 100%;
-    height: auto;
-    display: block;
-    opacity: 1;
-    transition: opacity 0.6s ease;
-  }
-  .raspadinha img.fade-out {
-    opacity: 0;
-  }
-  canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  #popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.7);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-  }
-  #popup-content {
-    background: #1e1e1e;
-    padding: 20px 40px;
-    border-radius: 10px;
-    font-size: 1.3rem;
-    text-align: center;
-    max-width: 90%;
-    border: 2px solid #ffc107;
-  }
-  #final {
-    display: none;
-    margin-top: 30px;
-    padding: 0 15px;
-  }
-  #final img {
-    width: 120px;
-    margin-bottom: 15px;
-  }
-  #final h2 {
-    font-size: 1.5rem;
-  }
-  #final h1 {
-    font-size: 2rem;
-    margin: 15px 0;
-    color: #ffbe06;
-  }
-  #final button {
-    background: #ffbe06;
-    color: #121212;
-    padding: 15px 25px;
-    font-size: 16px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    margin-top: 20px;
-    opacity: 0;
-    transform: translateY(-20px);
-    transition: all 0.8s ease;
-    width: 100%;
-    max-width: 400px;
-  }
-  #final button.mostrar {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  @media (max-width: 480px) {
-    #saldo {
-      font-size: 1rem;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Faça já seu Cadastro</title>
+  <link rel="canonical" href="https://chatmoney.xyz/"/>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0e1017;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      color: #333;
     }
-    #final h2 {
-      font-size: 1.2rem;
-    }
-    #final h1 {
-      font-size: 1.6rem;
-    }
-    #final img {
-      width: 90px;
-    }
-    #final button {
-      font-size: 1rem;
-      padding: 12px;
-    }
-  }
-</style>
 
+    .container {
+      max-width: 600px;
+      margin: 100px auto;
+      padding: 20px;
+      background: #0e1017;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
 
-	<script
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 30px;
+      font-size: 18px;
+      color: white;
+      background-color: #1dbc1d;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #218838;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 50px 20px;
+      }
+    }
+  </style>
+
+  <script
   src="https://cdn.utmify.com.br/scripts/utms/latest.js"
   data-utmify-prevent-xcod-sck
   data-utmify-prevent-subids
   async
   defer
 ></script>
-	
+  
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TPPX5WPP"
+
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KNRFGHX4"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-	
-<header>
-  <img src="logo.png" alt="Raspa Green" title="Raspa Green" />
-  <div id="saldo">Saldo: R$ 0,00</div>
-</header>
 
-	<article style="display:none;">
-		<
+  <article style="display:none;" lang="pt-BR">
 
-	</article>
+    <header> <h1>Parque de Diversões: Guia Completo para Planejar seu Dia de Aventuras</h1> <p>Dos carrosséis nostálgicos às montanhas-russas de alta velocidade, os parques de diversões oferecem entretenimento para todas as idades. Este artigo traz informações práticas, dicas de planejamento, segurança e sugestões para aproveitar ao máximo sua visita.</p> <p><small>Última atualização: agosto de 2025</small></p> </header> <figure> <img src="imagem-parque.jpg" alt="Vista aérea de um parque de diversões com montanha-russa e roda-gigante" style="max-width:100%;height:auto;"> <figcaption>Parques combinam atrações radicais, áreas temáticas e opções gastronômicas para famílias e grupos de amigos.</figcaption> </figure> <section> <h2>1. O que esperar em um parque de diversões</h2> <p>Um parque de diversões moderno costuma oferecer:</p> <ul> <li>Atrações radicais (montanhas-russas, quedas livres);</li> <li>Atrações familiares (carrossel, trens, roda-gigante);</li> <li>Áreas infantis e brinquedos com restrição de altura;</li> <li>Shows ao vivo, desfiles e experiências interativas;</li> <li>Opções de alimentação, lojas de lembranças e serviços como enfermaria e armários.</li> </ul> </section> <section> <h2>2. Planejamento: antes de ir</h2> <p>Um bom planejamento reduz filas, gastos desnecessários e frustrações. Veja as etapas essenciais:</p> <ol> <li><strong>Verifique o horário e calendário:</strong> parques têm dias e horários diferentes e, às vezes, eventos noturnos ou fechamentos programados.</li> <li><strong>Compre ingressos online:</strong> normalmente há desconto e opções de fura-fila ou Fast Pass.</li> <li><strong>Consulte mapa e atrações:</strong> identifique as atrações prioritárias e as áreas de alimentação.</li> <li><strong>Regras e restrições:</strong> confira altura mínima, política de entrada com alimentos e itens proibidos.</li> <li><strong>Clima:</strong> para parques ao ar livre, cheque a previsão para evitar surpresas.</li> </ol> </section> <section> <h2>3. Dicas para reduzir filas e aproveitar mais</h2> <ul> <li>Chegue cedo — as primeiras horas costumam ter filas menores.</li> <li>Use aplicações oficiais do parque para acompanhar tempos de espera em tempo real.</li> <li>Considere adquirir passes express ou fura-fila para atrações mais concorridas.</li> <li>Almoce fora do horário de pico (antes das 12h ou depois das 14h) para evitar longas filas nos restaurantes.</li> <li>Divida o grupo: enquanto uns vão em atrações radicais, outros aproveitam atrações familiares próximas.</li> </ul> </section> <section> <h2>4. Segurança e cuidados importantes</h2> <p>A segurança é prioridade. Observe estas recomendações:</p> <ul> <li>Siga as orientações dos operadores das atrações;</li> <li>Respeite restrições de altura e saúde (gestantes, problemas cardíacos, etc.);</li> <li>Prenda bem objetos soltos antes das atrações radicais;</li> <li>Mantenha uma identificação nas crianças com telefone de contato;</li> <li>Localize a enfermaria e pontos de atendimento ao visitante assim que chegar.</li> </ul> </section> <section> <h2>5. Alimentação e conforto</h2> <p>Alguns parques permitem levar alimentos; outros exigem consumo nas praças de alimentação. Dicas rápidas:</p> <ul> <li>Leve garrafinha de água reutilizável (se permitido) para hidratação;</li> <li>Se houver restrições alimentares, confira opções vegetarianas/sem glúten/sem lactose com antecedência;</li> <li>Use calçados confortáveis e roupas adequadas ao clima e ao tipo de atração;</li> <li>Considere levar protetor solar e capa de chuva leve em dias de tempo incerto.</li> </ul> </section> <section> <h2>6. Valores: exemplo de custos (estimativa)</h2> <p>Os preços variam muito por parque e data. A tabela abaixo mostra faixas típicas para ajudar no planejamento — confirme sempre no site oficial.</p>
 
-<div class="progress-container">
-  <div class="progress-bar" id="progress-bar"></div>
-</div>
+      <table border="1" cellpadding="8" cellspacing="0" style="border-collapse:collapse; width:100%; max-width:800px;">
+  <caption style="caption-side:top; text-align:left; font-weight:bold;">Faixa de preços (estimativa)</caption>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Preço médio (BRL)</th>
+      <th>Observação</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ingresso adulto (inteira)</td>
+      <td>R$ 100 — R$ 350</td>
+      <td>Varia por temporada e promoções</td>
+    </tr>
+    <tr>
+      <td>Ingresso criança</td>
+      <td>R$ 50 — R$ 250</td>
+      <td>Dependendo da idade e política do parque</td>
+    </tr>
+    <tr>
+      <td>Passe expresso / fura-fila</td>
+      <td>R$ 80 — R$ 600</td>
+      <td>Opção por atração, dia inteiro ou por grupos</td>
+    </tr>
+    <tr>
+      <td>Refeição por pessoa</td>
+      <td>R$ 25 — R$ 120</td>
+      <td>Fast food até restaurantes temáticos</td>
+    </tr>
+  </tbody>
+</table>
 
-<div id="jogo">
-    <h2 style="color:#ffc107;">Raspe e Ganhe</h2>
-	
-	<p>Para jogar é simples!</p>
-	
-	<p style="color:#ffc107;"> <b>Raspando e achando <b>3 iguais</b>, você ganha!</p>
-	
-  <div class="raspadinha">
-    <img src="" id="imagem-premios" alt="Prêmios" />
-    <canvas id="canvas"></canvas>
+
+      </section> <section> <h2>7. Atrações imperdíveis por tipo</h2> <h3>Aventuras radicais</h3> <p>Para quem busca emoção: montanhas-russas invertidas, aceleradores e quedas livres.</p>
+
+        <h3>Para famílias</h3>
+<p>Roda-gigante, trenzinho temático e carrossel garantem diversão e fotos memoráveis.</p>
+
+<h3>Crianças pequenas</h3>
+<p>Áreas com brinquedos interativos, oficinas e personagens costumam ser o sucesso dos pequenos.</p>
+
+
+        <h3>Para famílias</h3>
+<p>Roda-gigante, trenzinho temático e carrossel garantem diversão e fotos memoráveis.</p>
+
+<h3>Crianças pequenas</h3>
+<p>Áreas com brinquedos interativos, oficinas e personagens costumam ser o sucesso dos pequenos.</p>
+
+
+        </section> <section> <h2>8. Experiências além dos brinquedos</h2> <p>Muitos parques oferecem:</p> <ul> <li>Shows e espetáculos teatrais;</li> <li>Meet & greet com personagens;</li> <li>Eventos sazonais (Halloween, Natal, festas de primavera);</li> <li>Atividades educativas, aquários ou zoológicos integrados.</li> </ul> </section> <section> <h2>9. Checklist rápido para o dia</h2> <ul> <li>Ingressos / confirmações impressas ou no celular;</li> <li>Documentos e identificação das crianças;</li> <li>Dinheiro/Cartão e comprovante de reservas;</li> <li>Remédio pessoal e itens básicos de primeiros socorros;</li> <li>Carregador portátil e protetor solar.</li> </ul> </section> <section> <h2>Perguntas frequentes (FAQ)</h2>
+
+          <h3>Posso levar comida para o parque?</h3>
+<p>Depende do parque. Verifique a política no site oficial; muitos aceitam pequenos lanches, mas proíbem alimentos que necessitem aquecimento.</p>
+
+<h3>Como funcionam as filas rápidas (Fast Pass)?</h3>
+<p>São passes pagos (ou inclusos em ingressos premium) que permitem acesso prioritário a algumas atrações. Preços e disponibilidade variam conforme o dia.</p>
+
+<h3>Existe opção para visitantes com mobilidade reduzida?</h3>
+<p>Sim — a maioria dos parques possui equipamentos de acessibilidade, filas especiais e atendimento dedicado. Consulte o serviço de atendimento ao visitante antes da visita.</p>
+
+
+          <h3>Posso levar comida para o parque?</h3>
+<p>Depende do parque. Verifique a política no site oficial; muitos aceitam pequenos lanches, mas proíbem alimentos que necessitem aquecimento.</p>
+
+<h3>Como funcionam as filas rápidas (Fast Pass)?</h3>
+<p>São passes pagos (ou inclusos em ingressos premium) que permitem acesso prioritário a algumas atrações. Preços e disponibilidade variam conforme o dia.</p>
+
+<h3>Existe opção para visitantes com mobilidade reduzida?</h3>
+<p>Sim — a maioria dos parques possui equipamentos de acessibilidade, filas especiais e atendimento dedicado. Consulte o serviço de atendimento ao visitante antes da visita.</p>
+
+          <h3>Posso levar comida para o parque?</h3>
+<p>Depende do parque. Verifique a política no site oficial; muitos aceitam pequenos lanches, mas proíbem alimentos que necessitem aquecimento.</p>
+
+<h3>Como funcionam as filas rápidas (Fast Pass)?</h3>
+<p>São passes pagos (ou inclusos em ingressos premium) que permitem acesso prioritário a algumas atrações. Preços e disponibilidade variam conforme o dia.</p>
+
+<h3>Existe opção para visitantes com mobilidade reduzida?</h3>
+<p>Sim — a maioria dos parques possui equipamentos de acessibilidade, filas especiais e atendimento dedicado. Consulte o serviço de atendimento ao visitante antes da visita.</p>
+
+
+          </section> <footer> <h2>Conclusão</h2> <p>Visitar um parque de diversões pode ser uma experiência inesquecível com planejamento adequado. Escolha as atrações que combinam com seu grupo, priorize segurança e aproveite cada momento — desde a atração mais radical até as pequenas descobertas nas áreas temáticas.</p> <p><small>Gostou deste guia? Salve-o para consultar antes de sua próxima visita e compartilhe com amigos e família!</small></p> </footer> 
+
+    
+  
+  
+  
+  </article>
+
+
+    
+  <div class="container">
+
+
+   
+  
+    
+   
+    
+    <img src="banner.png" width="100%" />
+    <div style="padding:25px;"></div>
+     <a href="https://link.jogodacobra.info/?src=googleads" class="btn">Acessar Agora</a>
+
+    <a href="https://link.jogodacobra.info/?src=googleads">
+
+     <img src="print.png" width="100%" />
+    </a>
+
+      <a href="https://link.jogodacobra.info/">
+    <img src="demo.gif" width="100%" />
+     </a>
+
+ 
+     
+
+   
+
+    <a href="https://link.jogodacobra.info/?src=googleads" class="btn">Se Cadastrar</a>
+
+     <div style="padding:25px;"></div>
+    
   </div>
-
-	
-</div>
-
-<div id="final">
-  <img src="trofeu.png" alt="Troféu" />
-  <h2>Parabéns!</h2>
-	<p>Você conseguiu acumular um total de:
-	
-  <h1 style="color: #ffbe06;" id="total-final">R$ 0,00</h1>
-		<h2>Sua Conta está Inativa!</h2>
-		<p>Para ativar sua conta é preciso criar e ter feito 1 depósito nos últimos 7 dias. O valor acumulado deste prêmio, ficará retido até a ativação da mesma.</p>
-
-	<p>Toque no botão abaixo para criar e <b style="color: #ffbe06;">ativar sua conta</b>.</p>
-
-	<a href="https://raspix.digital/register?code=2055105684" id="lead">
-  <button id="btn-criar-conta">Criar Conta</button>
-	</a>
-</div>
-
-<div id="popup">
-  <div id="popup-content">
-    <p id="popup-text"></p>
-    <button style="background-color: #000; color:#ffc107; padding:16px 50px; border-radius:7px; border: 2px solid #ffc107;" onclick="fecharPopup()">OK</button>
-  </div>
-</div>
-
-<script>
-  let etapa = 1;
-  let saldoTotal = 0;           // valor animado exibido
-  let saldoAcumuladoReal = 0;   // valor exato acumulado
-
-  const valoresFixos = [75, 0, 145, 547];
-  const imagensPremios = [
-    "premio1.png",
-    "premio2.png",
-    "premio3.png",
-    "premio4.png",
-  ];
-  const sons = {
-    ganho: new Audio("caixa-registradora.mp3"),
-    erro: new Audio("erro.mp3"),
-  };
-
-  let canvas = document.getElementById("canvas");
-  let ctx = canvas.getContext("2d");
-  let img = document.getElementById("imagem-premios");
-  let isDrawing = false;
-  let brushSize;
-
-  function carregarImagemRaspadinha() {
-    return new Promise((resolve) => {
-      img.classList.add("fade-out");
-
-      setTimeout(() => {
-        img.src = imagensPremios[etapa - 1];
-      }, 600);
-
-      img.onload = () => {
-        img.classList.remove("fade-out");
-        ajustarCanvas();
-        iniciarRaspadinha();
-        resolve();
-      };
-    });
-  }
-
-  window.addEventListener("resize", ajustarCanvas);
-
-  function ajustarCanvas() {
-    canvas.width = img.clientWidth;
-    canvas.height = img.clientHeight;
-    brushSize = Math.min(canvas.width, canvas.height) * 0.15; // 40-70% do menor lado
-    iniciarRaspadinha();
-  }
-
-  function iniciarRaspadinha() {
-    ctx.globalCompositeOperation = "source-over";
-    ctx.fillStyle = "#888";
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
-    ctx.font = `${canvas.width / 12}px Arial`;
-    ctx.fillStyle = "#555";
-    ctx.textAlign = "center";
-    ctx.fillText("Raspe Aqui", canvas.width / 2, canvas.height / 2);
-    canvas.style.pointerEvents = "auto";
-    atualizarProgresso();
-  }
-
-  function atualizarSaldoAnimado(valorNovo) {
-    let saldoInicial = saldoTotal;
-    let diferenca = valorNovo - saldoInicial;
-    let passos = 20;
-    let incremento = diferenca / passos;
-    let i = 0;
-    let anim = setInterval(() => {
-      saldoInicial += incremento;
-      document.getElementById(
-        "saldo"
-      ).textContent = `Saldo: R$ ${saldoInicial.toFixed(2).replace(".", ",")}`;
-      i++;
-      if (i >= passos) {
-        saldoTotal = valorNovo;
-        document.getElementById(
-          "saldo"
-        ).textContent = `Saldo: R$ ${saldoTotal.toFixed(2).replace(".", ",")}`;
-        clearInterval(anim);
-      }
-    }, 50);
-  }
-
-  function animarNumeroPopup(valor) {
-    let display = document.getElementById("popup-text");
-    let atual = 0;
-    let incremento = Math.ceil(valor / 30) || 1;
-    let anim = setInterval(() => {
-      atual += incremento;
-      if (atual >= valor) atual = valor;
-      display.textContent =
-        valor > 0
-          ? `Você ganhou R$ ${atual.toFixed(2).replace(".", ",")}`
-          : "Tente mais uma vez";
-      if (atual >= valor || valor === 0) clearInterval(anim);
-    }, 30);
-  }
-
-  function animarTotalFinal() {
-    let display = document.getElementById("total-final");
-    let atual = 0;
-    let valor = saldoAcumuladoReal;
-    let incremento = valor / (5000 / 50);
-    let anim = setInterval(() => {
-      atual += incremento;
-      if (atual >= valor) atual = valor;
-      display.textContent = `R$ ${atual.toFixed(2).replace(".", ",")}`;
-      if (atual >= valor) {
-        clearInterval(anim);
-        setTimeout(() => {
-          document.getElementById("btn-criar-conta").classList.add("mostrar");
-        }, 500);
-      }
-    }, 50);
-  }
-
-  function atualizarProgresso() {
-    let barra = document.getElementById("progress-bar");
-    barra.style.width = `${((etapa - 1) / valoresFixos.length) * 100}%`;
-  }
-
-  function checkPercent() {
-    let imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-    let total = imageData.data.length / 4;
-    let clear = 0;
-    for (let j = 3; j < imageData.data.length; j += 4) {
-      if (imageData.data[j] === 0) clear++;
-    }
-    let percent = (clear / total) * 100;
-    if (percent > 40) {
-      canvas.style.pointerEvents = "none";
-      let valor = valoresFixos[etapa - 1];
-      if (valor > 0) {
-        sons.ganho.play();
-        animarNumeroPopup(valor);
-        saldoAcumuladoReal += valor; // soma correta
-        setTimeout(() => atualizarSaldoAnimado(saldoAcumuladoReal), 500);
-      } else {
-        sons.erro.play();
-        animarNumeroPopup(0);
-      }
-      document.getElementById("popup").style.display = "flex";
-    }
-  }
-
-  canvas.addEventListener("mousedown", () => (isDrawing = true));
-  canvas.addEventListener("mouseup", () => {
-    isDrawing = false;
-    checkPercent();
-  });
-  canvas.addEventListener("mousemove", (e) => {
-    if (!isDrawing) return;
-    let rect = canvas.getBoundingClientRect();
-    let x = e.clientX - rect.left;
-    let y = e.clientY - rect.top;
-    ctx.globalCompositeOperation = "destination-out";
-    ctx.beginPath();
-    ctx.arc(x, y, brushSize, 0, Math.PI * 2);
-    ctx.fill();
-  });
-
-  canvas.addEventListener("touchstart", () => (isDrawing = true));
-  canvas.addEventListener("touchend", () => {
-    isDrawing = false;
-    checkPercent();
-  });
-  canvas.addEventListener("touchmove", (e) => {
-  e.preventDefault();  // <<< impede o scroll da página enquanto raspam
-  if (!isDrawing) return;
-  let rect = canvas.getBoundingClientRect();
-  let touch = e.touches[0];
-  let x = touch.clientX - rect.left;
-  let y = touch.clientY - rect.top;
-  ctx.globalCompositeOperation = "destination-out";
-  ctx.beginPath();
-  ctx.arc(x, y, brushSize, 0, Math.PI * 2);
-  ctx.fill();
-}, { passive: false }); // importante: passive false para que preventDefault funcione
-
-
-  async function fecharPopup() {
-    document.getElementById("popup").style.display = "none";
-
-    if (etapa < valoresFixos.length) {
-      etapa++;
-      await carregarImagemRaspadinha();
-    } else {
-      document.getElementById("jogo").style.display = "none";
-      document.getElementById("final").style.display = "block";
-      animarTotalFinal();
-    }
-  }
-
-  carregarImagemRaspadinha();
-</script>
-
+<footer>
+  <a style="color:#fff;" href="#">Política de Privacidade</a> | <a style="color:#fff;" href="#">Termos e Condições</a>
+  </footer>
 </body>
 </html>
